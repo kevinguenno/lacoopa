@@ -1,0 +1,776 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Thin.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+html,
+body {
+    background-color: #202020;
+    display: block;
+    font-family: "Montserrat";
+    font-weight: normal !important;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* overflow-x: hidden permet de cacher le défilement horizontal */
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+
+/* Couleurs de base des textes et titres */
+p {
+    color: #EFEFED;
+    font-weight: normal;
+}
+
+li {
+    color: #EFEFED;
+}
+
+h1,
+h2,
+h3 {
+    color: #3A8EBA;
+}
+
+a {
+    text-decoration: none;
+    color: #202020;
+}
+
+footer a {
+    color: #EFEFED;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+strong {
+    font-weight: normal !important;
+}
+
+/* Container du header */
+.nav-container {
+    background-image: url(./assets/heroshot-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    max-height: 100vh;
+    width: 100vw;
+    clip-path: ellipse(130% 80% at 50% 20%);
+    z-index: 0;
+}
+
+/* Navigation mobile */
+.nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Styles de base pour le logo */
+.logo-mobile img {
+    width: 250px;
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+/* Cacher la checkbox (menu-toggle) */
+.menu-toggle {
+    display: none;
+}
+
+/* Styles pour le bouton burger */
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin: 60px 20px 0 20px;
+}
+
+.burger span {
+    display: block;
+    background-color: #EFEFED;
+    height: 3px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Styles pour le menu caché par défaut */
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background-color: #3A8EBA;
+    height: 100vh;
+    width: 100vw;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+
+}
+
+.menu-toggle:checked + .burger + .nav-menu {
+    right: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 20px 0
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-size: 24px; /* Ajustez la taille de la police si nécessaire */
+    line-height: 1.5; /* Ajoutez de l'interligne pour éviter le chevauchement du texte */
+    display: block;
+}
+
+/* Lorsque la case est cochée, afficher le menu */
+.menu-toggle:checked+.burger+.nav-menu {
+    transform: translateX(0);
+}
+
+/* Changer les barres en croix quand le menu est ouvert */
+.menu-toggle:checked+.burger span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle:checked+.burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked+.burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Masquer la version desktop en vue mobile */
+.nav-desktop {
+    display: none;
+}
+
+/* Bouton nous contacter */
+.button-header {
+    display: flex;
+    justify-content: center;
+    margin: -20px;
+    z-index: 1;
+    position: relative;
+}
+
+.button-header-contact {
+    padding: 10px 20px;
+    background: #E9A649;
+    border-radius: 10px;
+    border: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: auto;
+}
+
+
+
+
+
+/* Section Qui sommes nous ? */
+.qui {
+    margin: 0 20px 0 20px;
+}
+
+/* Section Artisans */
+.artisans {
+    margin: 0 20px 0 20px;
+}
+
+/* Cartes artisans */
+.artisan-kevin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.artisan-kevin h3 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.artisan-fred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.artisan-fred h3 {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Section Domaines intervention */
+.intervention-mobile {
+    margin-bottom: 50px;
+}
+
+.intervention-mobile h2 {
+    margin: 0 20px 20px 20px;
+}
+
+/* Cartes domaines intervention */
+.inter-corde-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3A8EBA;
+    padding-bottom: 20px;
+}
+
+.inter-corde-mobile h3 {
+    color: #EFEFED;
+}
+
+.savoir-plus-corde {
+    color: #EFEFED;
+    background-color: #3A8EBA;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.inter-amext-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFED;
+    padding-bottom: 20px;
+}
+
+.inter-amext-mobile h3 {
+    color: #3A8EBA;
+}
+
+.savoir-plus-amenext {
+    color: #3A8EBA;
+    background-color: #EFEFED;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Image de l'équipe */
+.equipe-mobile {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Section travaux sur cordes Mobile */
+
+.corde-full-desktop {
+    display: none;
+}
+
+#corde-titre h2 {
+    background-color: #3A8EBA;
+    color: #EFEFED;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#corde-titre img {
+    width: 100vw;
+    height: auto;
+}
+
+.corde-details {
+    margin: 0 20px 0 20px;
+    font-weight: 400;
+}
+
+.corde-details-img1 {
+    width: 90%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin: 0 20px 0 20px;
+}
+
+.corde-details-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button-contact-details {
+    padding: 10px 20px;
+    background: #E9A649;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: black;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+
+.button-galerie-details {
+/* display none tant que la galerie n'est pas finie */
+    display: none;
+    padding: 10px 20px;
+    background: #3A8EBA;
+    border-radius: 10px;
+    border: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+    width: 200px;
+}
+
+/* Section aménagements extérieur */
+
+.amenext-full-desktop {
+    display: none;
+}
+
+.amenext-details-img2 img{
+    display: none;
+}
+
+#amenext-titre h2 {
+    background-color: #3A8EBA;
+    color: #EFEFED;
+    width: 100vw;
+    text-align: center;
+    margin: 40px 0 0 0;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+#amenext-titre img {
+    width: 100vw;
+    height: auto;
+
+}
+
+.inter-amenext-details h3 {
+    margin: 20px 20px 20px 20px;
+}
+
+.amenext-details-mobile .button-contact-details {
+    display: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3A8EBA;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+    clip-path: ellipse(130% 80% at 50% 80%);
+}
+
+.footer-container h3 {
+    margin-top: 40px;
+    color: #EFEFED;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer-desktop {
+    display: none;
+}
+
+.tel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.liens-legaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: small;
+    margin-top: 40px;
+}
+
+.liens-legaux h4 {
+    font-family: "Montserrat";
+    font-weight: 100;
+    color: #EFEFED;
+    margin-bottom: 20px;
+}
+
+.liens-legaux a {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #EFEFED;
+}
+
+footer h4 {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: #EFEFED;
+    font-size: small;
+}
+
+/* Version desktop */
+@media (min-width: 768px) {
+
+    /* Couleurs de base des textes et titres */
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        /* Interlignage de 160% */
+    }
+
+    li {
+        color: #EFEFED;
+        font-size: 18px;
+        line-height: 1.6;
+        /* Interlignage de 160% */
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /* Cacher le menu burger en version desktop */
+    .burger,
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-container {
+        background-image: url(./assets/heroshot-desktop.png);
+        clip-path: ellipse(70% 80% at 50% 20%);
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: flex;
+    }
+
+    .logo-desktop img {
+        width: 30vw;
+    }
+
+    .nav-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 10vw;
+    }
+
+    .nav-desktop nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .nav-desktop a {
+        text-decoration: none;
+        color: #EFEFED;
+        margin-left: 50px;
+        font-size: larger;
+    }
+
+    .nav-desktop a:hover {
+        color: #3A8EBA;
+    }
+
+    .nav-desktop .logo-desktop {
+        display: flex;
+        flex-direction: row;
+        margin-top: 200px;
+    }
+
+    /* Bouton nous contacter */
+    .button-header-contact {
+        font-size: larger;
+        width: 300px;
+    }
+
+    main {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    /* Section Qui sommes nous ? */
+    .qui {
+        margin-top: 100px;
+    }
+
+    /* Section Artisans */
+    .artisans {
+        margin-top: 80px;
+    }
+
+    .cartes-artisans {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .artisan-kevin {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 550px;
+    }
+
+    .artisan-kevin h3 {
+        text-align: start;
+        margin-top: 0px;
+    }
+
+    .artisan-fred {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 550px;
+    }
+
+    .artisan-fred h3 {
+        text-align: start;
+        margin-top: 0px;
+    }
+
+    .textes-artisans {
+        max-width: 400px;
+    }
+
+    .equipe-mobile {
+        width: 160%;
+        /* Rend l'image plus large que son conteneur */
+        margin-left: -30%;
+        /* Centre l'image avec des marges négatives */
+        height: 500px;
+        object-fit: cover;
+        object-position: 100px -125px;
+    }
+
+    #corde-titre h2 {
+        width: auto;
+    }
+
+    #corde-titre img {
+        display: none;
+    }
+
+    .corde-details-mobile {
+        display: none;
+    }
+
+    .corde-full-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .corde-details-img-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .corde-details-img-desktop img {
+        margin-top: 40px;
+        height: 650px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .corde-details-desktop {
+        margin: 20px 0 40px 0;
+    }
+
+    .section-buttons-desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .button-contact-details {
+        padding: 15px 20px;
+        margin: 0 40px 0 20px;
+    }
+
+    .button-galerie-details {
+        padding: 15px 20px;
+    }
+
+    #amenext-titre h2 {
+        width: auto;
+    }
+
+    #amenext-titre img {
+        display: none;
+    }
+
+    .amenext-details-mobile {
+        display: none;
+    }
+
+    .amenext-full-desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .amenext-details-desktop {
+        margin: 20px 0 0 20px;
+    }
+
+    .amenext-details-desktop h3{
+        margin-bottom: 59px;
+    }
+
+    .amenext-details-img1 img{
+        margin: 40px 0 0 0;
+        width: 650px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .amenext-details-img2 img{
+        display: flex;
+        max-width: 1300px;
+        margin-top: 40px;
+    }
+
+/* Footer */
+
+footer {
+    background-color: #3A8EBA;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+    clip-path: ellipse(70% 80% at 50% 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-infos {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-footer img {
+    width: 20vw;
+}
+
+.logo-footer-mobile {
+    display: none;
+}
+
+.logo-footer-desktop {
+    display: flex;
+}
+
+.liens-legaux {
+    gap: 5vw;
+    font-size:medium;
+    margin-top: 40px;
+    
+}
+
+
+}
