@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta description pour le SEO -->
+    <meta name="description"
+        content="La Coopa, coopérative d'artisans spécialisés en travaux sur corde et aménagements extérieurs. Travaux en hauteur sécurisés et constructions bois sur mesure. Experts en maçonnerie, couverture, et élagage.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Schema.org Markup pour Local SEO -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "La Coopa",
+          "description": "La Coopa, coopérative d'artisans spécialisés en travaux sur corde et aménagement extérieur en région nantaise.",
+          "image": "https://www.votre-site.com/assets/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3 ter impasse des Bauches",
+            "addressLocality": "Vertou",
+            "postalCode": "44120",
+            "addressCountry": "FR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "47.16869",
+            "longitude": "-1.46929"
+          },
+          "telephone": "+33 6 65 47 59 58",
+          "priceRange": "€€",
+          "url": "https://lacoopa.fr/",
+          "openingHours": "Mo-Fr 09:00-18:00",
+          "sameAs": [
+            "https://www.facebook.com/LaCoopa",
+            "https://www.instagram.com/LaCoopa"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33 6 27 15 80 77",
+            "contactType": "Customer Service",
+            "areaServed": "FR",
+            "availableLanguage": "Français"
+          }
+        }
+        </script>
+
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://use.typekit.net/hdg5ucg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Travaux en Hauteur et Aménagements Extérieurs à Nantes - La Coopa</title>
+</head>
+
+<body>
+    <div>
+        <header>
+
+            <!-- Topbar / bandeau bleu -->
+            <div class="topbar">
+                <div class="topbar__inner">
+                    <div class="topbar__left">
+                        <a class="topbar__link" href="tel:+33665475958" aria-label="Appeler 06 65 47 59 58">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M6.6 10.8c1.7 3.3 3.9 5.5 7.2 7.2l2.4-2.4c.3-.3.8-.4 1.2-.2 1 .4 2.1.7 3.2.7.6 0 1 .4 1 .9v3.8c0 .6-.4 1-1 1C10.6 22 2 13.4 2 3.4c0-.6.4-1 1-1H6c.6 0 1 .4 1 1 0 1.1.2 2.2.6 3.2.1.4 0 .9-.3 1.2L6.6 10.8z" />
+                            </svg>
+                            <span>06&nbsp;65&nbsp;47&nbsp;59&nbsp;58</span>
+                        </a>
+                        <span class="topbar__sep">/</span>
+                        <a class="topbar__link" href="tel:+33627158077" aria-label="Appeler 06 27 15 80 77">
+                            <span>06&nbsp;27&nbsp;15&nbsp;80&nbsp;77</span>
+                        </a>
+                    </div>
+
+                    <a class="topbar__link topbar__email" href="mailto:coopa.artisans@gmail.com">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 5 8-5H4zm16 12V8l-8 5-8-5v10h16z" />
+                        </svg>
+                        <span>coopa.artisans@gmail.com</span>
+                    </a>
+
+                    <div class="topbar__right">
+                        <span>Lun-Ven&nbsp;7h-16h</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Container du header -->
+            <div class="nav-container-pages">
+
+                <!-- Navigation mobile -->
+                <div class="nav-mobile">
+
+                    <!-- Logo Mobile -->
+                    <div class="logo-mobile">
+                        <img id="logo-svg" src="./assets/logo-header-mobile.svg"
+                            alt="Logo La Coopa, artisans en travaux sur corde et aménagements extérieurs">
+                    </div>
+
+                    <!-- Bouton burger (contrôlé par une checkbox) -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+
+                    <!-- Menu burger qui contient les liens -->
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="apropos.html">À propos</a></li>
+                            <li><a href="travaux-en-hauteur.html">Travaux en hauteur</a></li>
+                            <li><a href="galerie.html">Galerie</a></li>
+                            <li><a href="#contact-footer">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="nav-desktop-pages">
+
+                    <div class="logo-desktop-nav">
+                        <img src="./assets/logo-header-mobile.svg" alt="Logo La Coopa version desktop">
+                    </div>
+
+                    <nav>
+                        <a href="index.html">Accueil</a>
+                        <a href="apropos.html">À propos</a>
+                        <a href="travaux-en-hauteur.html">Travaux en hauteur</a>
+                        <a href="galerie.html">Galerie</a>
+                        <a href="#contact-footer">Contact</a>
+                    </nav>
+
+                    <!-- Logo Desktop -->
+                    <div class="logo-desktop">
+                        <img src="./assets/logo-header-mobile.svg"
+                            alt="Logo La Coopa, artisans en travaux sur corde et aménagements extérieurs">
+                    </div>
+
+                </div>
+
+            </div>
+
+            </section>
+
+
+        </header>
+
+        <main>
+            <!-- Travaux en hauteur -->
+
+            <div class="heroshot-haut-de-page">
+                <img src="./assets/heroshot-travaux.jpg" alt="Artisans sur un chantier">
+            </div>
+        </section>
+
+<section class="travaux-intro">
+            <h1>Travaux en hauteur</h1>
+            <p class="intro">
+                La Coopa propose une large gamme de services en hauteur, adaptés aux besoins
+                des particuliers, entreprises et collectivités. Nos cordistes qualifiés
+                interviennent avec rigueur et sécurité, que ce soit pour l’entretien,
+                la réparation, l’inspection ou l’installation.
+            </p>
+        </section>
+
+            <section class="services-page">
+
+
+
+
+                <!-- Carte Bâtiment -->
+                <div class="service-card">
+                    <img src="./assets/card-batiment.jpg" alt="Travaux de bâtiment en hauteur">
+                    <h2>Bâtiment</h2>
+                    <ul>
+                        <li>Maçonnerie</li>
+                        <li>Sécurisation (filet / purge)</li>
+                        <li>Peinture</li>
+                        <li>Ravalement</li>
+                        <li>Bardage</li>
+                        <li>Étanchéité</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Couverture -->
+                <div class="service-card">
+                    <img src="./assets/card-couverture.jpg" alt="Couverture et toiture">
+                    <h2>Couverture</h2>
+                    <ul>
+                        <li>Toiture ardoise, tuile, Bacacier</li>
+                        <li>Recherche de fuite</li>
+                        <li>Réparation</li>
+                        <li>Pose de fenêtre de toit</li>
+                        <li>Gouttière, descente d'eau pluviale, zinguerie</li>
+                        <li>Restauration de cheminées</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Nettoyage -->
+                <div class="service-card">
+                    <img src="./assets/card-nettoyage.jpg" alt="Nettoyage en hauteur">
+                    <h2>Nettoyage</h2>
+                    <ul>
+                        <li>Lavage de vitres</li>
+                        <li>Traitement de toiture anti-mousse</li>
+                        <li>Nettoyage haute pression</li>
+                        <li>Nettoyage de chéneaux</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Anti-volatile -->
+                <div class="service-card">
+                    <img src="./assets/card-anti-volatile.jpg" alt="Anti-volatile">
+                    <h2>Anti-volatile</h2>
+                    <ul>
+                        <li>Pose de pics anti-volatile</li>
+                        <li>Pose de filets</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Maintenance -->
+                <div class="service-card">
+                    <img src="./assets/card-maintenance.jpg" alt="Maintenance industrielle">
+                    <h2>Maintenance</h2>
+                    <ul>
+                        <li>Interventions industrielles</li>
+                        <li>Installation de lignes de vie</li>
+                        <li>Pose de crinolines</li>
+                        <li>Filets anti-chute</li>
+                    </ul>
+                </div>
+
+                <!-- Carte Inspection -->
+                <div class="service-card">
+                    <img src="./assets/card-inspection.jpg" alt="Inspection en hauteur">
+                    <h2>Inspection</h2>
+                    <ul>
+                        <li>Sondage ouvrage d’art</li>
+                        <li>Relevé géométrique</li>
+                        <li>Relevé de ferraillage</li>
+                        <li>Sondage destructif</li>
+                        <li>Carottage</li>
+                    </ul>
+                </div>
+
+            
+            </section>
+
+
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-infos">
+                <div class="logo-footer">
+                    <img class="logo-footer-mobile" src="./assets/logo-footer-mobile.svg"
+                        alt="Logo de La Coopa pour travaux sur corde et aménagements extérieurs à Nantes">
+                    <img class="logo-footer-desktop" src="./assets/logo-footer-desktop.svg"
+                        alt="Logo de La Coopa, coopérative d'artisans à Nantes">
+                </div>
+                <div class="footer-container">
+                    <h3 id="contact-footer">Contactez nous</h3>
+                    <p class="contact-footer-texte">À La Coopa, nous combinons expertise, créativité et polyvalence pour
+                        répondre à tous vos besoins. Faites appel à nous pour des interventions fiables et sûres, et des
+                        réalisations de qualité.</p>
+                    <div class="tel">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M7.67962 6.63617L9.60868 4.70711C9.99921 4.31658 10.6324 4.31658 11.0229 4.70711L14.6613 8.34552C15.0518 8.73605 15.0518 9.36921 14.6613 9.75974L12.2111 12.2099C11.8336 12.5875 11.74 13.1642 11.9788 13.6418C13.3591 16.4024 15.5976 18.6409 18.3582 20.0212C18.8358 20.26 19.4125 20.1664 19.7901 19.7889L22.2403 17.3387C22.6308 16.9482 23.264 16.9482 23.6545 17.3387L27.2929 20.9771C27.6834 21.3676 27.6834 22.0008 27.2929 22.3913L25.3638 24.3204C23.2525 26.4317 19.9099 26.6693 17.5212 24.8777L14.2075 22.3925C12.464 21.0848 10.9152 19.536 9.60752 17.7925L7.12226 14.4788C5.33072 12.0901 5.56827 8.74752 7.67962 6.63617Z"
+                                fill="#EFEFED" />
+                        </svg>
+                        <a href="tel:+33665475958">06.65.47.59.58</a>
+                        <a href="tel:+33627158077">06.27.15.80.77</a>
+                    </div>
+                    <div class="email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.00106 11.8106C4 12.0804 4 12.3652 4 12.666V19.3327C4 22.1611 4 23.5753 4.87868 24.454C5.75736 25.3327 7.17157 25.3327 10 25.3327H22C24.8284 25.3327 26.2426 25.3327 27.1213 24.454C28 23.5753 28 22.1611 28 19.3327V12.666C28 12.3652 28 12.0804 27.9989 11.8106L16.9713 17.937C16.3672 18.2726 15.6328 18.2726 15.0287 17.937L4.00106 11.8106ZM4.07586 9.66865C4.21552 9.67919 4.35518 9.71938 4.48564 9.79186L16 16.1887L27.5144 9.79186C27.6448 9.71938 27.7845 9.67919 27.9241 9.66866C27.8284 8.69212 27.6116 8.03502 27.1213 7.5447C26.2426 6.66602 24.8284 6.66602 22 6.66602H10C7.17157 6.66602 5.75736 6.66602 4.87868 7.5447C4.38835 8.03502 4.17164 8.69211 4.07586 9.66865Z"
+                                fill="#EFEFED" />
+                        </svg>
+                        <a href="mailto:coopa.artisans@gmail.com">coopa.artisans@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="liens-legaux">
+                <a href="./mentions-legales.html">Mentions légales</a>
+                <a href="./confidentialite.html">Politique de confidentialité</a>
+            </div>
+            <h4>2025 La Coopa</h4>
+        </footer>
+
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const logoSvg = document.getElementById('logo-svg');
+
+        let scrollPosition = 0;
+
+        menuToggle.addEventListener('change', () => {
+            if (menuToggle.checked) {
+                // Changer le logo
+                logoSvg.src = './assets/logo-header-mobile-alt.svg';
+
+                // Bloquer le scroll
+                scrollPosition = window.scrollY; // mémorise la position
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${scrollPosition}px`;
+                document.body.style.left = '0';
+                document.body.style.right = '0';
+            } else {
+                // Rétablir le logo
+                logoSvg.src = './assets/logo-header-mobile.svg';
+
+                // Débloquer le scroll
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.left = '';
+                document.body.style.right = '';
+                window.scrollTo(0, scrollPosition); // revient où tu étais
+            }
+        });
+    </script>
+
+</body>
+
+</html>
